@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+}
+
+#body{
+    height: auto;
+    width: 1100px;
+    margin: 0 auto;
+}
+/* hết phần body */
+
+#menu{
+    height: 70px;
+    background-color: #1E3026;
+    position: relative;
+}
+
+#menu>.logo a img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 110px;
+}
+
+#menu ul{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+}
+
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+#menu ul li a:hover{
+    color:#00B2FF;
+}
+
+#menu ul li:nth-child(4){
+    margin-right: 3px;
+}
+
+#menu ul li a input{
+    border-radius: 30px;
+    padding-left: 30px;
+    width: 180px;
+    height: 30px;
+}
+#menu ul li.loup img{
+    position: absolute;
+    top: 9px;
+    left: 493px;
+    width: 20px;
+}
+
+#menu ul li.dk{
+    background-color: #9c9c97;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#menu ul ul {
+    position:absolute;
+    left: 50px;
+    top: 30px;
+    display:none;
+    list-style:none;
+    border-radius:3px;
+    width:200px;
+    background-color:white;
+    box-shadow:0px 0px 1px gray;
+}
+
+#menu ul ul a{
+    color:black;
+    line-height: 35px;
+    text-align: center;
+}
+
+#menu>ul>li:hover>ul{
+    display:block;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#menu>ul>li>ul>li{
+    display: inline-block;
+}
+/* hết phần menu*/
+
+#banner{
+    position: relative;
+    height: 400px;
+    background-color: #282828;
+}
+
+#banner img.trai{
+    position: absolute;
+    top: 52px;
+    left: 70px;
+}
+
+
+#banner img.chinh{
+        position: absolute;
+        top: 30px;
+        left: 170px;
+        transform: scale(1);
+        transition: all 0.5s;
+}
+
+#banner img.phai{
+    position: absolute;
+    top: 52px;
+    right: 70px;
+}
+#banner img.cham{
+    position: absolute;
+    bottom: 30px;
+    left: 487px;
+}
+
+#banner img.ctrai{
+    position: absolute;
+    left: 70px;
+    top: 126px;
+    height: 100px;
+}
+
+#banner img.cphai{
+    position: absolute;
+    right: 70px;
+    top: 126px;
+    height: 100px;
+}
+
+#banner>.hinh>a>img.chinh:hover{
+    transform: scale(1.1);
+}
+
+/*hết phần banner*/
+
+#content{
+    position: relative;
+    height: 1000px;
+    background-color: #282828;
+}
+
+#giua{
+    position: absolute;
+    left: 70px;
+    height: 100%;
+    width: 650px;
+    float: left;
+}
+
+#phai{
+    position: absolute;
+    right: -40px;
+    height: 100%;
+    width: 450px;
+    float: left;
+}
+
+#giua ul{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+#nhac ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+#tieude a{
+    position: absolute;
+    top: 208px;
+    text-decoration: none;
+    color: white;
+}
+
+#tieude a.nhac2{
+    position: absolute;
+    left: 207px;
+}
+
+#tieude a.nhac3{
+    position: absolute;
+    left: 410px;
+}
+
+#tieude a:hover{
+    color: #00B2FF;
+}
+
+h2.mv{
+    position: absolute;
+    top: 240px;
+}
+
+#nhacmv img.mv1{
+    position: absolute;
+    bottom: 520px;
+}
+
+
+#nhacmv img.mv2{
+    position: absolute;
+    bottom: 520px;
+    left: 390px;
+}
+
+#nhacmv img.mv3{
+    position: absolute;
+    bottom: 620px;
+    left: 390px;
+}
+
+.nutnhac{
+    position: absolute;
+    top: -10px;
+    right: 220px;
+    width:50px;
+}
+
+.bxh1{
+    position: absolute;
+    top: 50px;
+    width: 100px;
+}
+
+.bxhso1{
+    position: absolute;
+    top: 120px;
+    color: white;
+    font-weight: bold;
+    background-color:orangered;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#phai>p{
+    color: white;
+    font-size: 15px;
+}
+
+#phai>a{
+    color: white;
+    text-decoration: none;
+}
+
+#phai>a:hover{
+    color:#00B2FF;
+}
+
+.bxhten1{
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    right: 200px; 
+}
+
+.bxhtg1{
+    position: absolute;
+    top: 85px;
+    right: 222px;
+}
+
+.bxhso2{
+    position: absolute;
+    top: 195px;
+    left: 9px;
+}
+
+.bxhten2{
+    position: absolute;
+    font-size: 20px;
+    top: 190px;
+    left: 70px;
+
+}
+
+.bxhtg2{
+    position: absolute;
+    top: 220px;
+    left: 70px;
+}
+
+.bxhso3{
+    position: absolute;
+    top: 255px;
+    left: 9px;
+}
+
+.bxhten3{
+    position: absolute;
+    font-size: 20px;
+    top: 250px;
+    left: 70px;
+}
+
+.bxhtg3{
+    position: absolute;
+    top: 280px;
+    left: 72px;
+}
+
+.bxhso4{
+    position: absolute;
+    top: 315px;
+    left: 9px;
+}
+
+.bxhten4{
+    position: absolute;
+    font-size: 20px;
+    top: 310px;
+    left: 70px;
+}
+
+.bxhtg4{
+    position: absolute;
+    top: 340px;
+    left: 72px;
+}
+
+.bxhso5{
+    position: absolute;
+    top: 375px;
+    left: 9px;
+}
+
+.bxhten5{
+    position: absolute;
+    font-size: 20px;
+    top: 380px;
+    left: 70px;
+}
+
+.bxhtg5{
+    position: absolute;
+    top: 410px;
+    left: 72px;
+}
+
+#phaiduoi>h2{
+    position: absolute;
+    right: 260px;
+    bottom: 520px;
+}
+
+#phaiduoi>ul{
+    position: absolute;
+    right: 110px;
+    bottom: 30px;
+}
+
+#phaiduoi>ul>li{
+    list-style: none;
+    line-height: 50px;
+}
+
+#giuacuoi>h2{
+    position: absolute;
+    bottom: 470px;
+}
+
+#baihatcuoitrai>ul.bhanhtrai{
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+}
+
+#baihatcuoitrai>ul.bhanhtrai>li{
+    list-style: none;
+    line-height: 50px;
+}
+
+#baihatcuoitrai>ul.bhtieudetrai{
+    position: absolute;
+    bottom: 135px;
+    left: 130px;
+}
+
+#baihatcuoitrai>ul.bhtieudetrai>li{
+    list-style: none;
+    line-height: 65px;
+}
+
+#baihatcuoitrai>ul.bhtieudetrai>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#baihatcuoitrai>ul.bhtieudetrai>li>a:hover{
+    color: #00B2FF;
+}
+
+#baihatcuoitrai>ul.bhtacgiatrai{
+    position: absolute;
+    bottom: 115px;
+    left: 130px;
+}
+
+#baihatcuoitrai>ul.bhtacgiatrai>li{
+    list-style: none;
+    line-height: 63px;
+}
+
+#baihatcuoitrai>ul.bhtacgiatrai>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+#baihatcuoitrai>ul.bhtacgiatrai>li>a:hover{
+    color: #00B2FF;
+}
+
+#baihatcuoiphai>ul.bhanhphai{
+    position: absolute;
+    bottom: 120px;
+    left: 370px;
+}
+
+#baihatcuoiphai>ul.bhanhphai>li{
+    list-style: none;
+    line-height: 50px;
+}
+
+#baihatcuoiphai>ul.bhtieudephai{
+    position: absolute;
+    bottom: 135px;
+    left: 430px;
+}
+
+#baihatcuoiphai>ul.bhtieudephai>li{
+    list-style: none;
+    line-height: 65px;
+}
+
+#baihatcuoiphai>ul.bhtieudephai>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#baihatcuoiphai>ul.bhtieudephai>li>a:hover{
+    color: #00B2FF;
+}
+
+#baihatcuoiphai>ul.bhtacgiaphai{
+    position: absolute;
+    bottom: 115px;
+    left: 430px;
+}
+
+#baihatcuoiphai>ul.bhtacgiaphai>li{
+    list-style: none;
+    line-height: 63px;
+}
+
+#baihatcuoiphai>ul.bhtacgiaphai>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+#baihatcuoiphai>ul.bhtacgiaphai>li>a:hover{
+    color: #00B2FF;
+}
+
+
+/* hết phần conten*/
+
+#footer{
+    position: relative;
+    height: 750px;
+}
+
+#taitro{
+    background-color: #e6dfdf;
+    height: 200px;
+}
+
+h3{
+    position: absolute;
+    left: 20px;
+    top:10px;
+}
+
+#taitro>ul{
+    position: absolute;
+    top: 50px;
+}
+
+#taitro>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#taitro>ul>li>a{
+    text-decoration: none;
+}
+
+#traifoot{
+    width: 367px;
+    height: 100%;
+    float: left;
+}
+
+#giuafoot{
+    width: 366px;
+    height: 100%;
+    float: left;
+}
+
+#phaifoot{
+    width: 366px;
+    height: 100%;
+    float: left;
+}
+
+h4{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#traifoot>ul.traihotro{
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+}
+
+#traifoot>ul.traihotro>li{
+    list-style: none;
+    line-height: 40px;
+}
+
+#traifoot>ul.traihotro>li>a{
+    text-decoration: none;
+    color: gray;    
+}
+
+#traifoot>ul.phaihotro{
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+#traifoot>ul.phaihotro>li{
+    list-style: none;
+    line-height: 40px;
+}
+
+#traifoot>ul.phaihotro>li>a{
+    text-decoration: none;
+    color: gray;    
+}
+
+#giuafoot>ul.traisp{
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+}
+
+#giuafoot>ul.traisp>li{
+    list-style: none;
+    line-height: 40px;
+}
+
+#giuafoot>ul.traisp>li>a{
+    text-decoration: none;
+    color: gray;    
+}
+
+#giuafoot>ul.phaisp{
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+#giuafoot>ul.phaisp>li{
+    list-style: none;
+    line-height: 40px;
+}
+
+#giuafoot>ul.phaisp>li>a{
+    text-decoration: none;
+    color: gray;    
+}
+
+#footer ul li a:hover{
+    color: #00B2FF;
+}
+
+#phaifoot>a{
+    text-decoration: none;
+    color: #00B2FF;
+    margin-left: 20px;
+}
+
+h4.ketnoi{
+    margin: 10px 20px;
+}
+
+#phaifoot>ul.logo>li{
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+}
+
+#phaifoot>ul.gg>li{
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+}
+
+img.logo2{
+    position: absolute;
+    bottom: 10px;
+}
+
+div.gancuoi>h3.gugu{
+    margin: 630px 0px 0px 150px ;
+    color: gray;
+}
+
+div.gancuoi>ul{
+    margin: 80px 0px 20px 190px  ;
+}
+
+div.gancuoi>ul>li{
+    color: gray;
+    line-height: 23px;
+}
+
+#cuoicung{
+    background-color: #00B2FF;
+    height: 50px;
+    color: white;
+}
+
+#cuoicung>ul{
+    margin-left: 100px;
+
+}
+
+#cuoicung>ul>li{
+    list-style: none;
+    display: inline;
+    padding-left: 50px;
+    line-height: 50px;
+}
